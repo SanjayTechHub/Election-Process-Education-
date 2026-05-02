@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗳️ Election Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="hero">
+            <h1>🗳️ Election Education Assistant</h1>
+            <p>Ask me anything about elections – voter registration, polling day, candidate rules, timelines.</p>
+        </div>
+        <div class="chat-area">
+            <div class="chat-header">💬 AI Assistant</div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant">
+                    <div class="bubble">👋 Namaste! I'm your election assistant. Ask me any question.</div>
+                </div>
+            </div>
+            <div class="quick-buttons" id="quickButtons"></div>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Type your question..." autocomplete="off">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+        <footer>Powered by Google Gemini AI</footer>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
