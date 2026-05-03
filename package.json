@@ -1,19 +1,17 @@
 {
-  "name": "election-assistant-pro",
-  "version": "4.0.0",
-  "description": "Production-grade Election Assistant with Groq AI, speech, maps, PDF, offline-ready",
+  "name": "election-assistant-gemini",
+  "version": "5.0.0",
+  "description": "High‑score Election Education Assistant with Google Gemini AI, Maps, Speech, PDF, Accessibility, Testing",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test tests/app.test.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "groq-sdk": "^0.7.0",
-    "dotenv": "^16.3.1",
-    "helmet": "^7.1.0",
-    "express-rate-limit": "^7.1.5",
-    "cors": "^2.8.5"
-  },
+  "express": "^4.18.2",
+  "@google/generative-ai": "^0.21.0",
+  "dotenv": "^16.3.1"
+},
   "engines": {
     "node": ">=18"
   }
